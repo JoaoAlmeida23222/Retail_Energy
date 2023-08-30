@@ -1,0 +1,86 @@
+{
+  "short_name": "Retail Energy",
+  "name": "Retail Energy | Dashboard & Website",
+  "author": "Wébu",
+  "description": "© 2023 Retail Energy | All rights reserved.",
+  "lang": "pt",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./icons/branco_64x64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: dark)"
+    },
+    {
+      "src": "./icons/branco_32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: dark)"
+    },
+    {
+      "src": "./icons/branco_24x24.png",
+      "sizes": "24x24",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: dark)"
+    },
+    {
+      "src": "./icons/branco_16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: dark)"
+    },
+    {
+      "src": "./icons/branco_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: dark)"
+    },
+    {
+      "src": "./icons/branco_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: dark)"
+    },
+    {
+      "src": "./icons/preto_64x64.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: light)"
+    },
+    {
+      "src": "./icons/preto_32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: light)"
+    },
+    {
+      "src": "./icons/preto_24x24.png",
+      "sizes": "24x24",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: light)"
+    },
+    {
+      "src": "./icons/preto_16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: light)"
+    },
+    {
+      "src": "./icons/preto_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: light)"
+    },
+    {
+      "src": "./icons/preto_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "media": "(prefers-color-scheme: light)"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}

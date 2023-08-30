@@ -1,0 +1,181 @@
+.top-vendedor {
+  background-image: url("../recursos/seller_header_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 90px 0 90px 0;
+  text-align: center;
+  color: #fff;
+}
+.top-vendedor h1 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.card-overlay-vendedor {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 4px;
+  background-color: #235a9a80;
+  transition: background-color 0.3s;
+}
+.card-overlay-vendedor:hover {
+  background-color: #235a9acc;
+}
+.card-overlay-vendedor i.fa-circle-plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+}
+/** ========== Sidebar ========== */
+.nav-menu-vendedor * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu-vendedor li {
+  color: #7f8187;
+  border-radius: 5px;
+}
+.nav-menu-vendedor a {
+  display: flex;
+  align-items: center;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.nav-menu-vendedor a i {
+  font-size: 18px;
+  padding-right: 8px;
+}
+.nav-menu-vendedor li:hover {
+  color: #fff;
+  background-color: #235a9a;
+}
+/** ========== Editar Perfil ========== */
+.perfil-imagem-vendedor {
+  border-radius: 50%;
+  width: 170px;
+  border: 5px solid #235a9a;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.form-vendedor {
+  border: 3px solid #235a9a;
+}
+/** ========== Login ========== */
+.login-vendedor {
+  background-image: url("https://cdn.discordapp.com/attachments/1074835567474385016/1098662132335255612/Vendedor.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/** ========== Botões ========== */
+.btn-vendedor,
+.btn-vendedor:hover {
+  height: 36px;
+  border-radius: 5px;
+  background-color: #235a9a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-vendedor2,
+.btn-vendedor2:hover,
+.btn-vendedor2:focus {
+  height: 36px;
+  border-radius: 5px;
+  background-color: #467fc2;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+/* Botões de perfil */
+.btn-perfil-vendedor {
+  background-color: #235a9a;
+  color: #fff;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 18px;
+  transition: 0.2s;
+}
+.btn-outline-perfil-vendedor {
+  background-color: transparent;
+  color: #235a9a;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #235a9a;
+  padding: 8px;
+  transition: 0.2s;
+}
+/** ========== Efetuar Venda ========== */
+.bar-vendedor {
+  position: relative;
+  width: 80%;
+  height: 5px;
+  background-color: #235a9a;
+  border-radius: 5px;
+}
+.dot-vendedor {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #cce7f6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.dot-vendedor i {
+  font-size: 25px;
+}
+.dot-vendedor.active {
+  background-color: #235a9a;
+}
+.btn-seguinte-vendedor {
+  background-color: #235a9a;
+  border: 0;
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  margin-top: 30px;
+}
+/* Botões de pagamento */
+.btn-pagamento-vendedor {
+  background-color: #235a9a;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  margin-top: 30px;
+}
+/* Botões de download */
+.btn-download-vendedor,
+.btn-download-vendedor:hover {
+  background-color: #235a9a;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+}
+/** ========== Media Querys (Responsivo) ========== */

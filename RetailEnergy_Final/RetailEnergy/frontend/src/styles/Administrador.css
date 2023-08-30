@@ -1,0 +1,114 @@
+.top-admin {
+  background-image: url("../recursos/admin-header-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+.top-admin h1 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.card-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 4px;
+  background-color: rgba(255, 206, 81, 0.5);
+  transition: background-color 0.3s;
+}
+.card-overlay:hover {
+  background-color: #ffce51cc;
+}
+.card-overlay i.fa-eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+}
+/** ========== Sidebar ========== */
+.nav-menu-admin * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu-admin li {
+  color: #7f8187;
+  border-radius: 5px;
+}
+.nav-menu-admin a {
+  display: flex;
+  align-items: center;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.nav-menu-admin a i {
+  font-size: 18px;
+  padding-right: 8px;
+}
+.nav-menu-admin li:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(255, 206, 81);
+}
+/** ========== Editar Perfil ========== */
+.perfil-imagem-admin {
+  border-radius: 50%;
+  width: 170px;
+  border: 5px solid #ffce51;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.form-admin {
+  border: 3px solid #ffce51;
+}
+/** ========== Login ========== */
+.login-admin {
+  background-image: url("../recursos/Administrador.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/** ========== Botões ========== */
+.btn-admin,
+.btn-admin:hover,
+.btn-admin:focus {
+  height: 36px;
+  border-radius: 5px;
+  background-color: #ffce51;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+/* Botões de perfil */
+.btn-perfil-admin {
+  background-color: #ffce51;
+  color: #fff;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 18px;
+  transition: 0.2s;
+}
+.btn-outline-perfil-admin {
+  background-color: transparent;
+  color: #ffce51;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #ffce51;
+  padding: 8px;
+  transition: 0.2s;
+}
+/** ========== Media Querys (Responsivo) ========== */

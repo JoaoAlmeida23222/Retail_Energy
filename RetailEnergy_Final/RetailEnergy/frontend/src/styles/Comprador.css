@@ -1,0 +1,249 @@
+.top-comprador {
+  background-image: url("../recursos/buyer_header_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 90px 0 90px 0;
+  text-align: center;
+  color: #fff;
+}
+.top-comprador h1 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+/* Cards */
+.card-overlay-comprador {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 4px;
+  background-color: rgba(91, 197, 41, 0.5);
+  transition: background-color 0.3s;
+}
+.card-overlay-comprador:hover {
+  background-color: rgba(91, 197, 41, 0.8);
+}
+.card-overlay-comprador i.fa-eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+}
+/** ========== Sidebar ========== */
+.nav-menu-comprador * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu-comprador li {
+  color: #7f8187;
+  border-radius: 5px;
+}
+.nav-menu-comprador a {
+  display: flex;
+  align-items: center;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.nav-menu-comprador a i {
+  font-size: 18px;
+  padding-right: 8px;
+}
+.nav-menu-comprador li:hover {
+  color: #fff;
+  background-color: #5bc529;
+}
+/** ========== Editar Perfil ========== */
+.perfil-imagem-comprador {
+  border-radius: 50%;
+  width: 170px;
+  border: 5px solid #5bc529;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.form-comprador {
+  border: 3px solid #5bc529;
+}
+/** ========== Login ========== */
+.login-comprador {
+  background-image: url("https://cdn.discordapp.com/attachments/1074835567474385016/1098662120897380352/Comprador.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/** ========== Botões ========== */
+.btn-comprador,
+.btn-comprador:hover {
+  height: 36px;
+  border-radius: 5px;
+  background-color: #5bc529;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-comprador2,
+.btn-comprador2:hover,
+.btn-comprador2:focus {
+  height: 36px;
+  border-radius: 5px;
+  background-color: #a3e883;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+/* Botões de perfil */
+.btn-perfil-comprador {
+  background-color: #4fab24;
+  color: #fff;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 8px 18px;
+  transition: 0.2s;
+}
+.btn-outline-perfil-comprador {
+  background-color: transparent;
+  color: #4fab24;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #4fab24;
+  padding: 8px;
+  transition: 0.2s;
+}
+/* Botões de pagamento */
+.btn-pagamento-comprador {
+  background-color: #5bc529;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  margin-top: 30px;
+}
+.btn-download-comprador,
+.btn-download-comprador:hover,
+.btn-download-comprador:focus {
+  background-color: #5bc529;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-seguinte-comprador {
+  background-color: #5bc529;
+  border: 0;
+  width: 50%;
+  height: 50px;
+  color: #fff;
+  margin-top: 30px;
+}
+.btns-contrato {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+/** ========== Efetuar Compra ========== */
+.bar {
+  position: relative;
+  width: 80%;
+  height: 5px;
+  background-color: #5bc529;
+  border-radius: 5px;
+}
+.dot-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.dot {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #d3f0c5;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.dot i {
+  font-size: 25px;
+}
+.dot.active {
+  background-color: #5bc529;
+}
+.pagamento-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 120px;
+  gap: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.pagamento-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 55%;
+  height: 100%;
+  background: #5bc529;
+  transform: skewX(-15deg);
+  z-index: 0;
+}
+/* Form do pagamento */
+.form-custom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.form-custom:focus {
+  box-shadow: none;
+  background: none;
+}
+/** ========== Media Querys (Responsivo) ========== */
+@media only screen and (max-width: 1100px) {
+  .pagamento-container {
+    flex-direction: column;
+    padding: 20px;
+    margin: 40px 0 0 0;
+  }
+  .pagamento-container::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .btns-contrato {
+    display: grid;
+    place-content: center;
+  }
+}
