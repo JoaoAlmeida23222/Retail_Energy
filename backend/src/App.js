@@ -30,12 +30,12 @@ app.set("port", process.env.PORT || 3000);
 app.use(express.json());
 
 // Rotas
-app.use ('/dummydata', Dummydata);
-app.use ('/tipodeproposta', TipodePropostaRouters);
-app.use ('/produto', ProdutoRouters);
-app.use ('/admin', AdminRouters);
-app.use ('/comprador', CompradorRouters);
-app.use ('/responsaveis', ResponsavelRouters);
+app.use('/dummydata', Dummydata);
+app.use('/tipodeproposta', TipodePropostaRouters);
+app.use('/produto', ProdutoRouters);
+app.use('/admin', AdminRouters);
+app.use('/comprador', CompradorRouters);
+app.use('/responsaveis', ResponsavelRouters);
 app.use('/proposta', PropostaRouters);
 
 
