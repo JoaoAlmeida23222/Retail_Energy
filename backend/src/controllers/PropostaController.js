@@ -27,9 +27,9 @@ controllers.GetAllPropostas = async (req, res, next) => {
 
 // Comando para criar as Propostas
 controllers.createProposta = async (req, res, next) => {
-  const a = await sequelize.transaction();
   console.log(req.body);
   try {
+    const a = await sequelize.transaction();
     const Proposta = await ProdutoModel.create(
       {
         data: new Date(),

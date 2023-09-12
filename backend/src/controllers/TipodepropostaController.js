@@ -18,8 +18,8 @@ controllers.getAllTipoProposta = async (req, res, next) => {
 
 // Comando para criar os tipos de Proposta
 controllers.createTipoProposta = async (req, res, next) => {
-    const t = await sequelize.transaction();
     try {
+        const t = await sequelize.transaction();
         const TiposdeProposta = await TipodePropostaModel.create(
             {
                 nome: req.body.nome,

@@ -73,19 +73,19 @@ var Proposta = sequelize.define(
     });
 
 // Associações    
-//TipodeProposta.hasMany(Proposta,{sourceKey: 'id', foreignKey: 'tipodepropostaId' });
+TipodeProposta.hasMany(Proposta,{sourceKey: 'id', foreignKey: 'tipodepropostaId' });
 Proposta.belongsTo(TipodeProposta, {sourceKey: 'id', foreignKey: 'tipodepropostaId'});
 
 Proposta.belongsTo(Produto,{sourceKey:'id', foreignKey:'produtoId'});
-//Produto.hasOne(Proposta,{sourceKey:'id', foreignKey:'produtoId'});
+Produto.hasOne(Proposta,{sourceKey:'id', foreignKey:'produtoId'});
 
 Proposta.belongsTo(Admin,{sourceKey:'id', foreignKey:'adminId'});
 Admin.hasMany(Proposta,{sourceKey:'id', foreignKey:'adminId'});
 
 Proposta.belongsTo(Comprador, {sourceKey:'id', foreignKey:'compradorId'});
-//Comprador.hasMany(Proposta,{sourceKey:'id', foreignKey:'compradorId'});
+Comprador.hasMany(Proposta,{sourceKey:'id', foreignKey:'compradorId'});
 
 Proposta.belongsTo(Responsaveis, {sourceKey:'id', foreignKey:'responsaveisId'});
-//Responsaveis.hasMany(Proposta,{sourceKey:'id', foreignKey:'responsaveisId'});
+Responsaveis.hasMany(Proposta,{sourceKey:'id', foreignKey:'responsaveisId'});
 
 module.exports = Proposta;
