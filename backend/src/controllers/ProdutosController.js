@@ -38,9 +38,9 @@ controllers.getAllProdutos = async (req, res, next) => {
     
   // Comando de criar Produtos
   controllers.createProduto = async (req, res, next) => {
-    const a = await sequelize.transaction();
     console.log(req.body);
     try {
+      const a = await sequelize.transaction();
       const Produto = await ProdutoModel.create(
         {
           nome: req.body.nome,

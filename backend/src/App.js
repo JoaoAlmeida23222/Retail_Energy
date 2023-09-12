@@ -24,7 +24,7 @@ app.use((req, res, next) => {
 });
 
 // Configuração da Porta de Inicio
-app.set("port", process.env.PORT || 3333);
+app.set("port", process.env.PORT || 3000);
 
 // Middlewares
 app.use(express.json());
@@ -36,7 +36,7 @@ app.use ('/produto', ProdutoRouters);
 app.use ('/admin', AdminRouters);
 app.use ('/comprador', CompradorRouters);
 app.use ('/responsaveis', ResponsavelRouters);
-app.use ('/proposta', PropostaRouters);
+app.use('/proposta', PropostaRouters);
 
 
 // Inicio do Servidor na Porta definida na Configuração

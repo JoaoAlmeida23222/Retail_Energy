@@ -1,3 +1,3 @@
-const endpoint = 'http://localhost:3333';
+const endpoint = '/api';
 
 export default endpoint;

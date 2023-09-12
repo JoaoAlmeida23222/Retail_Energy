@@ -18,9 +18,9 @@ controllers.GetAllComprador = async (req,res, next) =>{
 
 // Comando de criar Comprador
 controllers.createComprador = async (req, res, next) => {
-  const a = await sequelize.transaction();
   console.log(req.body);
   try {
+    const a = await sequelize.transaction();
     const Comprador = await CompradorModel.create(
       {
         nomefinal: req.body.nomefinal,

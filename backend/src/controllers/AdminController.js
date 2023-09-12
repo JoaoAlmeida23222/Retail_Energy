@@ -18,9 +18,8 @@ controllers.getAllAdmin = async (req, res, next) => {
   
   // Comando de criar Administradores
   controllers.createAdmin = async (req, res, next) => {
-    const a = await sequelize.transaction();
-    console.log(req.body);
     try {
+      const a = await sequelize.transaction();
       const Admin = await AdminModel.create(
         {
           nomeinicial: req.body.nomeinicial,
@@ -53,7 +52,7 @@ controllers.getAllAdmin = async (req, res, next) => {
    // }
  // };
 
- controllers.loginAdmin = async (req, res, next) => {
+controllers.loginAdmin = async (req, res, next) => {
   try {
     const Admin = await AdminModel.findOne({
       where: {

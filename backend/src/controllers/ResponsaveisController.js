@@ -18,9 +18,9 @@ controllers.GetAllResponsaveis = async (req,res, next) =>{
 
 // Comando de criar Responsaveis
 controllers.createResponsavel = async (req, res, next) => {
-  const a = await sequelize.transaction();
   console.log(req.body);
   try {
+    const a = await sequelize.transaction();
     const Responsavel = await ResponsavelModel.create(
       {
         nomeinicial: req.body.nomeinicial,

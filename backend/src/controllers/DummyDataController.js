@@ -248,6 +248,7 @@ controllers.testdata = async (req, res) => {
       console.log(err);
       return err;
     });
+  console.log(response);
   res.json(response);
 };
 module.exports = controllers;
